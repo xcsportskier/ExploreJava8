@@ -19,6 +19,8 @@ public class DemoData {
 	public static final void printDemoData(List<Invoice> invoices) {
 		for (Invoice inv : invoices) {
 			System.out.print("#: ");
+			System.out.println(inv.getId());
+			System.out.print("Customer#: ");
 			System.out.println(inv.getCustomerId());
 			System.out.print("Name: ");
 			System.out.println(inv.getCustomerName());
