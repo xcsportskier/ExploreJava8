@@ -2,16 +2,23 @@ package ru.rsa.mcc;
 
 public class Invoice {
 	
+	private Integer id;
 	private Integer customerId;
 	private String customerName;
 	private Double amount;
 	
-	public Invoice(Integer customerId, String customerName, Double amount) {
+	public Invoice(Integer id, Integer customerId, String customerName, Double amount) {
+		this.id = id;
 		this.customerId = customerId;
 		this.customerName = customerName;
 		this.amount = amount;
 	}
-	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	public Integer getCustomerId() {
 		return customerId;
 	}
