@@ -28,7 +28,7 @@ public class Streams1 {
 		DemoData.printDemoData(oracleInvoices);
 		
 		/*
-		 * ... additionally we can extract Ids of the founded invoices 
+		 * ... additionally we can extract Ids of the found invoices 
 		 */
 		
 		// get only oracle invoices ids sorted by amount ascending 
