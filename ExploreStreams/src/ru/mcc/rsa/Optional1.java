@@ -26,7 +26,7 @@ public class Optional1 {
 		}
 
 		/*
-		 *  If we want get rid of the NullPointerException,
+		 *  If we want to get rid of the NullPointerException,
 		 *  we should perform some checks
 		 *  However, you can see that the code in the listing quickly becomes very ugly due to the nested checks.
 		 */
