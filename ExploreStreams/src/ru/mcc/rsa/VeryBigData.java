@@ -5,6 +5,9 @@ import java.util.List;
 
 import ru.rsa.mcc.Invoice;
 
+/*
+ * Here is the demo data for estimate performance of streams
+ */
 public class VeryBigData {
 	public static final List<Invoice> populateDemoData() {
 		List<Invoice> lst = new ArrayList<>();
