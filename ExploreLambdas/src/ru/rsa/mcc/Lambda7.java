@@ -16,7 +16,7 @@ public class Lambda7 extends Lambda3 {
 			
 		List<Invoice> invoices = ld.getInvoices();
 		
-		// old-style code
+		// old-style code to be refactored
 		class InvoiceAmountComparator implements Comparator<Invoice> {
 		    public int compare(Invoice i1, Invoice i2) {
 		        return i1.getAmount().compareTo(i2.getAmount());
