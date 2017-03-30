@@ -19,7 +19,7 @@ public class Lambda6 {
 			}
 		};*/
 		
-		// using behaviour parametrization with lambda expression
+		// using behavior parametrization with lambda expression
 		try (DirectoryStream<Path> stream = Files.newDirectoryStream(dir, file -> Files.isDirectory(file) )) {
 			for (Path file: stream) {
 		        System.out.println(file.getFileName()); // printing directories only
