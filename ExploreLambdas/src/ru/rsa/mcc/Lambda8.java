@@ -19,7 +19,7 @@ public class Lambda8 {
 			}
 		};*/
 		
-		// using behaviour parametrization with lambda expression and method reference
+		// using behavior parametrization with lambda expression and method reference
 		try (DirectoryStream<Path> stream = Files.newDirectoryStream(dir, Files::isDirectory )) {
 			for (Path file: stream) {
 		        System.out.println(file.getFileName()); // printing directories only
