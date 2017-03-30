@@ -15,7 +15,7 @@ public class Streams9 {
 		 * Here is old-style Java code which
 		 * filters invoices from specific customer,
 		 * sorts by amount and finally extracts the first two IDs.
-		 * It will be refactoring round a corner :-)
+		 * It will be refactored round a corner :-)
 		 */
 		List<Invoice> invoices = DemoData.populateDemoData();
 		DemoData.printDemoData(invoices);
