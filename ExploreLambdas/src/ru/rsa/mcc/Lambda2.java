@@ -9,7 +9,7 @@ public class Lambda2 extends Lambda1 {
 		super(invoices);
 	}
 	
-	// implements behaivour parametrization pattern
+	// implements behavior parametrization pattern
 	public List<Invoice> findInvoices(InvoicePredicate p) {
 		List<Invoice> result = new ArrayList<>();
 		for (Invoice inv : this.getInvoices()) {
