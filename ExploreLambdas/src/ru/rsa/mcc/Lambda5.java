@@ -13,7 +13,7 @@ public class Lambda5 {
 		Path dir = FileSystems.getDefault().getPath("C:\\Eclipse");
 		
 		
-		// using behavior parametrization
+		// using behavior parameterization
 		DirectoryStream.Filter<Path> filter = new DirectoryStream.Filter<Path>() {
 			public boolean accept(Path file) {
 				 return (Files.isDirectory(file));						
