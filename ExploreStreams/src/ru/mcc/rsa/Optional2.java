@@ -27,9 +27,13 @@ public class Optional2 {
 		
 			System.out.println(cityNameO);
 			
+			// print city name
 			if (cityNameO.isPresent())
 			 System.out.println(cityNameO.get());
 			else 
 			 System.out.println("City value is empty");
+			
+			// or even better
+			cityNameO.ifPresent(System.out::println);
 	}
 }
