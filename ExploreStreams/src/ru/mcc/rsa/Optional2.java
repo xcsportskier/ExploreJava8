@@ -12,7 +12,7 @@ public class Optional2 {
 		LocationO locO = new LocationO();
 		City city = new City();
 		
-		city.setName("New York");
+		//city.setName("New York");
 		
 		locO.setCity(Optional.of(city));
 		locO.setRegion("Great New York Area");
@@ -20,12 +20,16 @@ public class Optional2 {
 		eventO.setLoc(Optional.of(locO));
 		
 
-		String cityNameO = Optional.ofNullable(eventO)
+		Optional<String> cityNameO = Optional.ofNullable(eventO)
 				.flatMap(EventO::getLoc)
 				.flatMap(LocationO::getCity)
-				.map(City::getName)
-				.orElse("DefaultCity");
+				.map(City::getName);
+		
 			System.out.println(cityNameO);
-				
+			
+			if (cityNameO.isPresent())
+			 System.out.println(cityNameO.get());
+			else 
+			 System.out.println("City value is empty");
 	}
 }
