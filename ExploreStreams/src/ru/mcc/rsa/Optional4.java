@@ -6,6 +6,7 @@ public class Optional4 {
 	public static void main(String[] args) {
 		/*
 		 * Often you need to call a method on an object and check some property.
+		 * We are demonstrating filter method here
 		 */
 		EventO eventO = new EventO();
 		LocationO locO = new LocationO();

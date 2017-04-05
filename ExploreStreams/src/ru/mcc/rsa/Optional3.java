@@ -6,6 +6,7 @@ public class Optional3 {
 	public static void main(String[] args) {
 		/*
 		 * A typical pattern is to return a default value if you determine that the result of an operation is null.
+		 * We are demonstrating orElse method here.
 		 */
 		EventO eventO = new EventO();
 		LocationO locO = new LocationO();

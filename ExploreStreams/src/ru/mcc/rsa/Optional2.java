@@ -7,12 +7,13 @@ public class Optional2 {
 	public static void main(String[] args) {
 		/*
 		 * Another example of Optional class
+		 * We are demonstrating ifPresent method here.
 		 */
 		EventO eventO = new EventO();
 		LocationO locO = new LocationO();
 		City city = new City();
 		
-		//city.setName("New York");
+		// city.setName("New York");
 		
 		locO.setCity(Optional.of(city));
 		locO.setRegion("Great New York Area");
