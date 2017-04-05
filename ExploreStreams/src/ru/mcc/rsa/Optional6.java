@@ -35,8 +35,9 @@ public class Optional6 {
 				            .flatMap(LocationO::getCity)
 				            .map(City::getName)
 				            .orElse("DefaultCity");
+		
 	    System.out.println(cityName);
 	    
-	    // So here we can see a code from which we are started, see also Optional1 class.
+	    // So here we can see a code we started about, see also Optional1 class.
 	}
 }
