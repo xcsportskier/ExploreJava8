@@ -64,7 +64,7 @@ public class Optional5 {
 		 * What is the solution? 
 		 * The Optional class supports a flatMap method. Its purpose is to apply the transformational function of value of an Optional
 		 * (just like the map operation does) and then flatten the result two-level Optional into single one.
-		 * Note: an explanation picture should be added into PowerPoint presentation.
+		 * Note: an explanation picture should be added into the PowerPoint presentation.
 		 * See also Optional6 class.
 		 */
 	}

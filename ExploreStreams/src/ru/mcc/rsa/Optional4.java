@@ -16,7 +16,7 @@ public class Optional4 {
 		
 		locO.setCity(Optional.of(city));
 		locO.setRegion("Great New York Area");
-		eventO.setLoc(Optional.of(locO));
+		eventO.setLoc(Optional.ofNullable(locO));
 		
 		boolean isNewYorkArea = eventO.getLoc().filter(loc -> loc.getRegion().contains("New York")).isPresent();
 		
