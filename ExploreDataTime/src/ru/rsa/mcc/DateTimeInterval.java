@@ -20,15 +20,6 @@ public class DateTimeInterval {
 	private long seconds;
 	private long millis;
 
-	/**
-	 * 
-	 * @param from	a start date
-	 * @param to	a finish date
-	 * @return		an object of DataTimeInterval.
-	 * 				Use getters to retrieve certain portion of interval 
-	 * 				like years or hours.
-	 * @see			java.time.LocalDateTime
-	 */
 	private DateTimeInterval(LocalDateTime from, LocalDateTime to) {
 
 		LocalDateTime fromTemp = LocalDateTime.from(from);
@@ -53,6 +44,18 @@ public class DateTimeInterval {
 		millis = fromTemp.until(to, ChronoUnit.MILLIS);
 	}
 
+	/**
+	 * The method calculate a difference between from and to dates
+	 * and expresses it in years, months, days, hours, 
+	 * minutes, seconds and milliseconds
+	 * 
+	 * @param from	a start date
+	 * @param to	a finish date
+	 * @return		an object of DataTimeInterval.
+	 * 				Use getters to retrieve certain portion of interval 
+	 * 				like years or hours.
+	 * @see			java.time.LocalDateTime
+	 */
 	public static DateTimeInterval between(LocalDateTime from, LocalDateTime to) {
 		return new DateTimeInterval(from, to);
 	}
