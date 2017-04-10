@@ -3,14 +3,32 @@ package ru.rsa.mcc;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
+/**
+ * A helper class to calculate a difference between two dates.
+ *
+ * @author Myzika Alex xcsportskier@gmail.com
+ * @version 1.0
+ *
+ */
 class DateTimeInterval {
-	long years;
-	long months;
-	long days;
-	long hours;
-	long minutes;
-	long seconds;
 
+	private long years;
+	private long months;
+	private long days;
+	private long hours;
+	private long minutes;
+	private long seconds;
+	private long millis;
+
+	/**
+	 * 
+	 * @param from	a start date
+	 * @param to	a finish date
+	 * @return		an object of DataTimeInterval.
+	 * 				Use getters to retrieve certain portion of interval 
+	 * 				like years or hours.
+	 * @see			java.time.LocalDateTime
+	 */
 	private DateTimeInterval(LocalDateTime from, LocalDateTime to) {
 
 		LocalDateTime fromTemp = LocalDateTime.from(from);
@@ -48,57 +66,28 @@ class DateTimeInterval {
 		return years;
 	}
 
-	public void setYears(long years) {
-		this.years = years;
-	}
-
 	public long getMonths() {
 		return months;
-	}
-
-	public void setMonths(long months) {
-		this.months = months;
 	}
 
 	public long getDays() {
 		return days;
 	}
 
-	public void setDays(long days) {
-		this.days = days;
-	}
-
 	public long getHours() {
 		return hours;
-	}
-
-	public void setHours(long hours) {
-		this.hours = hours;
 	}
 
 	public long getMinutes() {
 		return minutes;
 	}
 
-	public void setMinutes(long minutes) {
-		this.minutes = minutes;
-	}
-
 	public long getSeconds() {
 		return seconds;
-	}
-
-	public void setSeconds(long seconds) {
-		this.seconds = seconds;
 	}
 
 	public long getMillis() {
 		return millis;
 	}
 
-	public void setMillis(long millis) {
-		this.millis = millis;
-	}
-
-	long millis;
 }
