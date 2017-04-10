@@ -10,7 +10,7 @@ import java.time.temporal.ChronoUnit;
  * @version 1.0
  *
  */
-class DateTimeInterval {
+public class DateTimeInterval {
 
 	private long years;
 	private long months;
