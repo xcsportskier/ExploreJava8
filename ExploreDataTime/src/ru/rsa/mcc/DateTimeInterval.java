@@ -53,7 +53,7 @@ public class DateTimeInterval {
 		millis = fromTemp.until(to, ChronoUnit.MILLIS);
 	}
 
-	static DateTimeInterval between(LocalDateTime from, LocalDateTime to) {
+	public static DateTimeInterval between(LocalDateTime from, LocalDateTime to) {
 		return new DateTimeInterval(from, to);
 	}
 
