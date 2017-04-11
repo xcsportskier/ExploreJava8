@@ -34,5 +34,4 @@ public class ExploreDTAPI2 {
 							LocalTime.MIDNIGHT.plus(flightLength).format(DateTimeFormatter.ofPattern("HH:mm")) 
 							+ " to get there!"); // It will take 07:40 to get there!
 	}
-
 }
