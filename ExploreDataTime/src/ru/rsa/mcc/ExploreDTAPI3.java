@@ -11,7 +11,7 @@ public class ExploreDTAPI3 {
 		 * A Duration measures an amount of time using time-based values (seconds, nanoseconds). 
 		 * A Period uses date-based values (years, months, days).
 		 * Duration practically stores the time in the nanoseconds.
-		 * Duration is most suitable when we measure machine based timings where as Period
+		 * Duration is most suitable when we measure machine based timings where is Period
 		 * is most suitable when we want to know the human readable time representation.
 		 * Let's calculate how much you have been living since the last doomsday.
 		 */

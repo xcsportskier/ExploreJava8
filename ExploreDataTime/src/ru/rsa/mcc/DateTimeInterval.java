@@ -61,8 +61,14 @@ public class DateTimeInterval {
 	}
 
 	public String toString() {
-		return "The difference is " + years + " years, " + months + " months, " + days + " days, " + hours + " hours, "
-				+ minutes + " minutes, " + seconds + " seconds, " + millis + " millis";
+		return  String.format("The difference is %d years, %d months, %d days, %d hours, %d minutes, %d seconds, %d millis", 
+				years,
+				months,
+				days,
+				hours,
+				minutes,
+				seconds,
+				millis);
 	}
 
 	public long getYears() {
