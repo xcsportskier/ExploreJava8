@@ -18,7 +18,7 @@ public class Optional5 {
 
 		locO.setCity(Optional.of(city));
 		locO.setRegion("Great New York Area");
-		// locO = null; // NoSuchElementException at line 30 will be thrown
+		// locO = null; // NoSuchElementException at line 29 will be thrown
 		eventO.setLoc(Optional.ofNullable(locO));
 
 		/*
