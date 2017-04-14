@@ -19,7 +19,7 @@ public class Optional6 {
 		locO.setRegion("Great New York Area");
 		eventO.setLoc(Optional.ofNullable(locO));
 
-		locO.setCity(Optional.ofNullable(null));
+		//locO.setCity(Optional.ofNullable(null));
 		
 		/*
 		 * Refactoring from cityName = eventO.getLoc().get().getCity().map(City::getName).get();
@@ -33,8 +33,7 @@ public class Optional6 {
 		String cityName = event
 				            .flatMap(EventO::getLoc)
 				            .flatMap(LocationO::getCity)
-				            .map(City::getName)
-				            .orElse("DefaultCity");
+				            .map(City::getName).get();
 		
 	    System.out.println(cityName);
 	    
