@@ -27,15 +27,16 @@ public class Streams4 {
 		 * when executing parallel operations on a stream as it helps in performance 
 		 * optimization without worrying about which element will be returned.
 		 */
-		Optional<Invoice> oracleInvoices = invoices.stream()
+		Optional<Invoice> oracleInvoice = invoices.stream()
 										.filter(inv -> inv.getCustomerId() == Customer.ORACLE)
 										.findFirst();
 		
-		Invoice oracleInvoice = oracleInvoices.get();
-		
-		invoices.clear();
-		invoices.add(oracleInvoice);
-		
+		if (oracleInvoice.isPresent()) {
+		 Invoice inv = oracleInvoice.get();
+		 invoices.clear();
+		 invoices.add(inv);
+		}
+			
 		DemoData.printDemoData(invoices);
 	}
 
