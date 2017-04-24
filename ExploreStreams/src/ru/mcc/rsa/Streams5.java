@@ -26,7 +26,6 @@ public class Streams5 {
 		// and print it
 		for (Integer id : ids) {
 			System.out.println("Invoice Id:" + id);
-
 		}
 		/*
 		 * More complex map example
